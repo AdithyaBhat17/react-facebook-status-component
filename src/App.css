@@ -1,0 +1,42 @@
+.App{
+  color:#00008c !important
+}
+
+.dp{
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 50%;
+  margin: 0;
+  display: inline-block;
+}
+
+.thumbnail{
+  height: auto;
+  width: 50% !important;
+  margin:15px auto auto 15px;
+  padding:5px !important;
+}
+
+.container{
+  padding: 0;
+  width: 100%; 
+}
+
+.post-img{
+  width: 100%;
+}
+
+.profile-link{
+  display: inline-flex ;
+}
+
+button{
+  background-color:transparent;
+  border:0;
+  color:#4c37a8 !important
+}
+
+p{
+  margin-top:7px;
+  margin-left:5px;
+}
