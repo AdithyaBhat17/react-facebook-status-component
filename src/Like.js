@@ -6,8 +6,7 @@ export default class Like extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            liked:false,
-            commentShow:false
+            liked:false
         }
     }
 
@@ -16,13 +15,6 @@ export default class Like extends React.Component{
             liked: !prevState.liked
         }))
     }
-
-    toggleComments = () => {
-        this.setState((prevState) => ({
-            commentShow: !prevState.commentShow
-        }))
-    }
-
 
     render(){
         return(
@@ -39,7 +31,7 @@ export default class Like extends React.Component{
                         </button>                        
                     </div>
                     <div className="col-sm-4 col-xs-4">
-                        <button onClick={() => this.toggleComments()}>
+                        <button>
                             <i className="far fa-comment"></i>Comment
                         </button>
                     </div>
@@ -51,7 +43,6 @@ export default class Like extends React.Component{
                 </div>
                 <Comment 
                 maxChar={140}
-                commentShow={this.state.commentShow}
                 />
             </div>
             

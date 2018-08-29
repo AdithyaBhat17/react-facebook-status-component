@@ -6,8 +6,7 @@ export default class Comment extends React.Component{
         super(props);
         this.state = {
             characters: 0,
-            comment:'',
-            comments:false
+            comment:''
         }
     }
 
@@ -20,7 +19,6 @@ export default class Comment extends React.Component{
 
 
     render(){
-        // const {maxChar,commentShow} = this.props
         return(
             <div className="comments">
                 
